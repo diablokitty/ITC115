@@ -1,0 +1,38 @@
+public class BillCalculator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//single line comment
+		System.out.println("Your bill from Joe's Restaurant");
+		System.out.println();
+		/* This is
+		 * a multi line comment
+		 */
+		
+		
+		//declare the variables with different data types
+		
+		String item = "Breakfast special";
+		//strings are used for storing characters
+		double price = 3.66;
+		//doubles are used when we want to express numbers with decimals. Like money.
+		int servings = 8;
+		//ints are used when we want to use only whole numbers
+		double tax = .01 * price;
+		//calculate the tax
+		double total = (price + tax) * servings;
+		//calculate the the total bill 
+		
+		//store the output in a string
+		
+		String bill = 
+				"Order item: " + item + "\n" + "Price: $" + price + "\n" + "Servings: " + servings + "\n" + "Tax: $" + tax + "\n" + "Total: $" + total;
+		//concatenate all of the information on the bill, the "\n" is special character for return
+		
+		System.out.println(bill);
+		System.out.println("Thank you for dining at Joe's!");
+		
+		
+	}
+
+}
